@@ -1,0 +1,38 @@
+#header {
+  width: 100%;
+  position: fixed;
+  height: 158px;
+  background-color: blue;
+  transition: 0.5s all;
+
+  &.scrolled {
+    height: 69px;
+    transition: 0.5s all;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 4%);
+  }
+
+  #nav-bar {
+    height: 100%;
+
+    .container {
+      height: 100%;
+
+      .row {
+        height: 100%;
+
+        div {
+          div {
+            @include flex(none, center);
+            height: 100%;
+          }
+
+          ul {
+            @include flex(none, center);
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

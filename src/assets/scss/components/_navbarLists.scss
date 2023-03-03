@@ -1,0 +1,5 @@
+@import '../abstracts/mixins';
+
+.nav-bar__lists {
+    @include flex(space-evenly, center);
+}
